@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Dinner Tray App</string>
+
+    <string name="main_dish1">Grilled Salmon with Lemon-Dill Sauce</string>
+    <string name="main_dish2">Vegetable Stir-Fry with Tofu</string>
+    <string name="main_dish3">Chicken Alfredo Pasta</string>
+    <string name="main_dish4">Beef and Vegetable Stir-Fry</string>
+    <string name="main_dish5">Mushroom Risotto</string>
+
+    <string name="main_dish1_des">Marinate salmon fillets in a mixture of lemon juice, dill, garlic, and olive oil. Grill until cooked through and serve with a creamy lemon-dill sauce.</string>
+    <string name="main_dish2_des"> Sauté a mix of colorful vegetables and cubed tofu in a flavorful stir-fry sauce. Serve over rice or noodles.</string>
+    <string name="main_dish3_des">Cook pasta and toss with a creamy Alfredo sauce made with butter, heavy cream, garlic, and Parmesan cheese. Add grilled or sautéed chicken for protein.</string>
+    <string name="main_dish4_des">Sear strips of beef with vegetables like bell peppers, broccoli, and carrots in a soy-based stir-fry sauce. Serve over rice.</string>
+    <string name="main_dish5_des"> Sauté mushrooms with garlic and shallots, then stir into creamy Arborio rice with Parmesan cheese and fresh herbs.</string>
+
+    <string name="side_dish1">Garlic Roasted Asparagus</string>
+    <string name="side_dish2">Mashed Potatoes</string>
+    <string name="side_dish3">Caesar Salad</string>
+    <string name="side_dish4">Roasted Brussels Sprouts with Balsamic Glaze</string>
+    <string name="side_dish5">Caprese Salad</string>
+
+    <string name="side_dish1_des">Toss asparagus spears in olive oil, minced garlic, salt, and pepper, then roast until tender.</string>
+    <string name="side_dish2_des">Creamy mashed potatoes made with butter, cream, salt, and pepper are a classic side dish.</string>
+    <string name="side_dish3_des">Romaine lettuce tossed with Caesar dressing, croutons, and grated Parmesan cheese.</string>
+    <string name="side_dish4_des">Roast Brussels sprouts with olive oil, salt, and pepper, then drizzle with a balsamic glaze before serving.</string>
+    <string name="side_dish5_des">Slices of tomato, fresh mozzarella, and basil leaves drizzled with balsamic glaze and olive oil.</string>
+
+    <string name="dessert1">Chocolate Fondue</string>
+    <string name="dessert2">Classic Apple Crisp</string>
+    <string name="dessert3">Lemon Bars</string>
+    <string name="dessert4">Chocolate Lava Cake</string>
+    <string name="dessert5">Fresh Berry Parfait</string>
+
+    <string name="dessert1_des">Melted chocolate served with an assortment of dippable items like fruits, marshmallows, and cookies.</string>
+    <string name="dessert2_des">Baked apples with a crispy streusel topping, served warm with a scoop of vanilla ice cream.</string>
+    <string name="dessert3_des">Tangy lemon filling on a buttery shortbread crust, dusted with powdered sugar.</string>
+    <string name="dessert4_des">Individual cakes with a gooey, molten chocolate center. Serve with a dollop of whipped cream.</string>
+    <string name="dessert5_des">Layers of fresh berries, Greek yogurt, and granola for a light and refreshing dessert.</string>
+</resources>
