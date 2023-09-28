@@ -36,4 +36,8 @@
     <string name="dessert3_des">Tangy lemon filling on a buttery shortbread crust, dusted with powdered sugar.</string>
     <string name="dessert4_des">Individual cakes with a gooey, molten chocolate center. Serve with a dollop of whipped cream.</string>
     <string name="dessert5_des">Layers of fresh berries, Greek yogurt, and granola for a light and refreshing dessert.</string>
+
+    <string name="order_details">Main Dish: %1$s \nSide Dish: %2$s \nDessert : %3$s \nTotal: %4$s \n\nThank you!</string>
+    <string name="new_order">New Dinner Order</string>
+    <string name="subtotal_price">Subtotal %s</string>
 </resources>

@@ -6,5 +6,4 @@ data class OrderUiState(
     val dessert:String = "",
     val price:String = "",
     val pickupOptions: List<String> = listOf()
-
 )

@@ -86,7 +86,12 @@ fun SelectOption(
                             else Color(0xFF0061A4),
                             )
 
-                        HorizontalLine(color = Color.Black, thickness = 1.dp, modifier = Modifier.padding(vertical = 8.dp))
+                        HorizontalLine(
+                            color = if(isSystemInDarkTheme()) Color(0xFFD1E4FF)
+                            else Color(0xFF001D36),
+                            thickness = 1.dp,
+                            modifier = Modifier.padding(vertical = 8.dp)
+                        )
 
                     }
 
@@ -101,7 +106,6 @@ fun SelectOption(
             horizontalArrangement = Arrangement.spacedBy(16.dp),
             verticalAlignment = Alignment.Bottom
         ){
-
             OutlinedButton(
                 modifier = Modifier.weight(1f),
                 onClick = onCancelButtonClicked) {
