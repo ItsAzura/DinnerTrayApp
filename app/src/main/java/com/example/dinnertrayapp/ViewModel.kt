@@ -13,7 +13,6 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-
 private const val Main_Dish = 6.00
 private const val Side_Dish = 5.00
 private const val Dessert_Dish = 4.00
@@ -59,7 +58,7 @@ class ViewModel: ViewModel() {
         sideDish: String = _uiState.value.sidedish,
         dessert: String = _uiState.value.dessert,
     ):String{
-      var calPrice : Double = 0.0
+      var calPrice: Double = 0.0
         calPrice = Main_Dish + Side_Dish + Dessert_Dish
         val formattedPrice = NumberFormat.getCurrencyInstance().format(calPrice)
         return formattedPrice
