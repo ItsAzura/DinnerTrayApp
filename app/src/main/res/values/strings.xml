@@ -40,4 +40,5 @@
     <string name="order_details">Main Dish: %1$s \nSide Dish: %2$s \nDessert : %3$s \nTotal: %4$s \n\nThank you!</string>
     <string name="new_order">New Dinner Order</string>
     <string name="subtotal_price">Subtotal %s</string>
+    <string name="new_dinner_order">New Dinner Order</string>
 </resources>

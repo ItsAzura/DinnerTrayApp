@@ -12,7 +12,6 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.material3.Button
-import androidx.compose.material3.Divider
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
@@ -24,7 +23,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
@@ -73,18 +71,11 @@ fun SelectOption(
                     Column() {
                         Text(
                             item.first,
-                            fontSize =  22.sp,
+                            fontSize =  18.sp,
                             fontWeight = FontWeight.Bold,
                             color = if(isSystemInDarkTheme()) Color(0xFF9ECAFF)
                             else Color(0xFF0061A4),
                         )
-                        Text(
-                            item.second,
-                            fontSize =  16.sp,
-                            fontWeight = FontWeight.Medium,
-                            color = if(isSystemInDarkTheme()) Color(0xFF9ECAFF)
-                            else Color(0xFF0061A4),
-                            )
 
                         HorizontalLine(
                             color = if(isSystemInDarkTheme()) Color(0xFFD1E4FF)
