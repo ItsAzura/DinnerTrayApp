@@ -13,10 +13,6 @@ import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
-private const val Main_Dish = 6.00
-private const val Side_Dish = 5.00
-private const val Dessert_Dish = 4.00
-
 class ViewModel: ViewModel() {
     private val _uiState = MutableStateFlow(OrderUiState(pickupOptions = pickupOptions()))
 
@@ -39,11 +35,11 @@ class ViewModel: ViewModel() {
 
         }
     }
-    fun setDessert(Dessert_dish:String){
+    fun setDessert(dessert_Dish:String){
         _uiState.update { currentState ->
             currentState.copy(
-                dessert = Dessert_dish,
-                price = calPrice(dessert = Dessert_dish)
+                dessert = dessert_Dish,
+                price = calPrice(Dessert = dessert_Dish)
             )
 
         }
@@ -56,10 +52,41 @@ class ViewModel: ViewModel() {
     private fun calPrice(
         mainDish: String =  _uiState.value.maindish,
         sideDish: String = _uiState.value.sidedish,
-        dessert: String = _uiState.value.dessert,
+        Dessert: String = _uiState.value.dessert,
     ):String{
-      var calPrice: Double = 0.0
-        calPrice = Main_Dish + Side_Dish + Dessert_Dish
+        var Main_Dish : Double = 0.0
+        var Side_Dish : Double = 0.0
+        var Dessert_Dish : Double = 0.0
+
+        Main_Dish =
+            if(mainDish == "Grilled Salmon with Lemon-Dill Sauce") 5.00
+            else if(mainDish == "Vegetable Stir-Fry with Tofu") 4.00
+            else if(mainDish == "Chicken Alfredo Pasta") 6.00
+            else if(mainDish == "Beef and Vegetable Stir-Fry") 7.00
+            else if(mainDish == "Mushroom Risotto") 4.00
+            else 0.0
+
+        Side_Dish =
+            if(sideDish == "Garlic Roasted Asparagus" ) 2.00
+            else if(sideDish == "Mashed Potatoes" ) 3.00
+            else if(sideDish == "Caesar Salad" ) 4.00
+            else if(sideDish == "Roasted Brussels Sprouts with Balsamic Glaze" ) 5.00
+            else if(sideDish == "Caprese Salad" ) 6.00
+            else 0.0
+
+        Dessert_Dish =
+            if(Dessert == "Chocolate Fondue" ) 2.00
+            else if(Dessert == "Classic Apple Crisp" ) 2.00
+            else if(Dessert == "Lemon Bars" ) 3.00
+            else if(Dessert == "Chocolate Lava Cake" ) 4.00
+            else if(Dessert == "Fresh Berry Parfait" ) 5.00
+            else 0.0
+
+
+        var calPrice: Double = 0.0
+        calPrice = if(Main_Dish != 0.0 && Side_Dish != 0.0 && Dessert_Dish != 0.0)
+            Main_Dish + Side_Dish + Dessert_Dish
+        else 0.0
         val formattedPrice = NumberFormat.getCurrencyInstance().format(calPrice)
         return formattedPrice
     }
