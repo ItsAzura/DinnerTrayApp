@@ -1,7 +1,4 @@
 package com.example.dinnertrayapp.data
-
-import com.example.dinnertrayapp.R
-
 object DataSource {
     val maindish = listOf(
         Pair("Grilled Salmon with Lemon-Dill Sauce",

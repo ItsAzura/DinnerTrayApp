@@ -84,8 +84,7 @@ class ViewModel: ViewModel() {
 
 
         var calPrice: Double = 0.0
-        calPrice = if(Main_Dish != 0.0 && Side_Dish != 0.0 && Dessert_Dish != 0.0)
-            Main_Dish + Side_Dish + Dessert_Dish
+        calPrice = if(Main_Dish != 0.0 && Side_Dish != 0.0 && Dessert_Dish != 0.0) Main_Dish + Side_Dish + Dessert_Dish
         else 0.0
         val formattedPrice = NumberFormat.getCurrencyInstance().format(calPrice)
         return formattedPrice

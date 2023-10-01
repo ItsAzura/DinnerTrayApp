@@ -2,7 +2,6 @@ package com.example.dinnertrayapp
 
 import android.content.Context
 import android.content.Intent
-import android.icu.text.CaseMap.Title
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding

@@ -36,15 +36,12 @@ fun OrderSummary(
         orderUiState.dessert,
         orderUiState.price
     )
-
     val newOrder = stringResource(id = R.string.new_order)
-
     val items = listOf(
         Pair("Main Dish", orderUiState.maindish),
         Pair("Side Dish", orderUiState.sidedish),
         Pair("Dessert ", orderUiState.dessert),
     )
-
     Column(
         modifier = modifier,
         verticalArrangement = Arrangement.SpaceBetween
@@ -88,7 +85,6 @@ fun OrderSummary(
         }
     }
 }
-
 @Preview
 @Composable
 fun OrderSummaryPreview(){
